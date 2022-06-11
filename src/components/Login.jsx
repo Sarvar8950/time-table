@@ -14,17 +14,17 @@ export default function Login({ setlogin , setstudent, setliveevent, setupcoming
       password,
       user
     }
-    fetch(`https://assignment-time-table-app.herokuapp.com/liveevent`)
+    fetch(`https://timetableapp333.herokuapp.com/liveevent`)
       .then(res => res.json())
       .then(res => setliveevent(res))
-    fetch(`https://assignment-time-table-app.herokuapp.com/showupcomingevent`)
+    fetch(`https://timetableapp333.herokuapp.com/showupcomingevent`)
       .then(res => res.json())
       .then(res => setupcomingevent(res))
-    fetch(`https://assignment-time-table-app.herokuapp.com/allstudent`)
+    fetch(`https://timetableapp333.herokuapp.com/allstudent`)
       .then(res => res.json())
       .then(res => setstudent(res))
     if (user === "student") {
-      fetch(`https://assignment-time-table-app.herokuapp.com/studentinfo`, {
+      fetch(`https://timetableapp333.herokuapp.com/studentinfo`, {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
@@ -41,7 +41,7 @@ export default function Login({ setlogin , setstudent, setliveevent, setupcoming
           }
         })
     } else {
-      fetch(`https://assignment-time-table-app.herokuapp.com/admininfo`, {
+      fetch(`https://timetableapp333.herokuapp.com/admininfo`, {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {

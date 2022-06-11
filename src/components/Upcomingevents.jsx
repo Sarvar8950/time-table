@@ -17,7 +17,7 @@ export default function Upcomingevents() {
             ending
         }
         // console.log(obj)
-        fetch(`https://assignment-time-table-app.herokuapp.com/upcomingevent`, {
+        fetch(`https://timetableapp333.herokuapp.com/upcomingevent`, {
             method : "POST",
             body : JSON.stringify(obj),
             headers : {
