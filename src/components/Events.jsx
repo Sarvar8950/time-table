@@ -17,7 +17,7 @@ export default function Events() {
             ending
         }
         // console.log(obj)
-        fetch(`http://localhost:8001/event`, {
+        fetch(`https://assignment-time-table-app.herokuapp.com/event`, {
             method : "POST",
             body : JSON.stringify(obj),
             headers : {

@@ -14,7 +14,7 @@ export default function Admin() {
         }
         // console.log(obj)
         // console.log(obj)
-        fetch(`http://localhost:8001/admin`, {
+        fetch(`https://assignment-time-table-app.herokuapp.com/admin`, {
             method : "POST",
             body : JSON.stringify(obj),
             headers : {

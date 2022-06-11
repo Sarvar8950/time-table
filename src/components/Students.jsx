@@ -22,7 +22,7 @@ export default function Students() {
             password
         }
         // console.log(obj)
-        fetch(`http://localhost:8001/student`, {
+        fetch(`https://assignment-time-table-app.herokuapp.com/student`, {
             method : "POST",
             body : JSON.stringify(obj),
             headers : {
